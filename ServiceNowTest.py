@@ -760,6 +760,7 @@ def convert_file_name(name):
     name = name.replace("|", "_").replace("?", "_").replace("*", "_").replace("#", "_").replace("$", "_").replace("+", "_").replace("%", "_")
     name = name.replace("!", "_").replace("`", "_").replace("&", "_").replace("{", "_").replace("}", "_").replace("'", "_").replace("=", "_")
     name = name.replace("@", "_")
+    name = name.strip()
     return name
 
 
